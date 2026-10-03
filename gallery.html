@@ -1,311 +1,215 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
 
-    <!-- Bootstrap Icons -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
-    />
-    <link rel="stylesheet" href="index.css" />
-  </head>
-  <body>
-    <header class="site-header sticky-top">
-      <nav
-        class="navbar navbar-expand-lg navbar-dark fixed-top"
-        data-bs-theme="dark"
-      >
-        <div class="container">
-          <a class="navbar-brand" href="./index.html"
-            ><img
-              src="./assets/Logo/Vertical/PNG/Logo Main Color 1200px.png"
-              alt="Car Shield"
-          /></a>
-          <button
-            class="navbar-toggler border-0 shadow-none"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#nav"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="nav">
-            <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
-              <li class="nav-item">
-                <a class="nav-link active" href="./index.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./About.html">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./services.html">Services</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./gallery.html">Gallery</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./contact.html">Contact</a>
-              </li>
-              <li class="nav-item ms-lg-3 mt-3 mt-lg-0">
-                <a class="btn btn-brand btn-sm" href="#contact"
-                  >Book Your Protection
-                  <i class="fa-solid fa-arrow-right ms-1"></i
-                ></a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-    </header>
-    <section id="gallery" class="bg-black text-white py-5">
-      <div class="container py-5">
-        <!-- Heading -->
-        <div class="row mb-5">
-          <div class="col-lg-8">
-            <p class="text-danger fw-bold text-uppercase mb-2">Our Work</p>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" />
 
-            <h2 class="display-4 fw-bold mb-3">Protection in Every Detail</h2>
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  <link rel="stylesheet" href="index.css" />
+</head>
 
-            <p class="text-secondary fs-5">
-              Explore some of our latest automotive protection and styling work
-              completed by Car Shield.
-            </p>
-          </div>
-        </div>
-
-        <!-- Gallery Tabs -->
-        <ul class="nav nav-pills gap-2 mb-5" id="galleryTabs" role="tablist">
-          <li class="nav-item">
-            <button
-              class="nav-link active"
-              data-bs-toggle="pill"
-              data-bs-target="#all"
-              type="button"
-            >
-              All
-            </button>
-          </li>
-
-          <li class="nav-item">
-            <button
-              class="nav-link"
-              data-bs-toggle="pill"
-              data-bs-target="#ppfGallery"
-              type="button"
-            >
-              PPF
-            </button>
-          </li>
-
-          <li class="nav-item">
-            <button
-              class="nav-link"
-              data-bs-toggle="pill"
-              data-bs-target="#tintGallery"
-              type="button"
-            >
-              Window Tint
-            </button>
-          </li>
-
-          <li class="nav-item">
-            <button
-              class="nav-link"
-              data-bs-toggle="pill"
-              data-bs-target="#fashionGallery"
-              type="button"
-            >
-              Fashion Film
-            </button>
-          </li>
-
-          <li class="nav-item">
-            <button
-              class="nav-link"
-              data-bs-toggle="pill"
-              data-bs-target="#videoGallery"
-              type="button"
-            >
-              Videos
-            </button>
-          </li>
-        </ul>
-
-        <div class="tab-content">
-          <!-- ALL -->
-          <div class="tab-pane fade show active" id="all">
-            <div class="row g-3">
-              <div class="col-md-6 col-lg-4">
-                <img
-                  src="./assets/gallery/car1.jpg"
-                  class="img-fluid w-100 object-fit-cover"
-                  style="height: 350px"
-                  alt="Car Shield PPF Work"
-                />
-              </div>
-
-              <div class="col-md-6 col-lg-4">
-                <img
-                  src="./assets/gallery/car2.jpg"
-                  class="img-fluid w-100 object-fit-cover"
-                  style="height: 350px"
-                  alt="Car Shield Window Tint"
-                />
-              </div>
-
-              <div class="col-md-6 col-lg-4">
-                <img
-                  src="./assets/gallery/car3.jpg"
-                  class="img-fluid w-100 object-fit-cover"
-                  style="height: 350px"
-                  alt="Car Shield Protection"
-                />
-              </div>
-
-              <div class="col-md-6 col-lg-8">
-                <img
-                  src="./assets/gallery/car4.jpg"
-                  class="img-fluid w-100 object-fit-cover"
-                  style="height: 450px"
-                  alt="Car Shield Automotive Protection"
-                />
-              </div>
-
-              <div class="col-md-6 col-lg-4">
-                <img
-                  src="./assets/gallery/car5.jpg"
-                  class="img-fluid w-100 object-fit-cover"
-                  style="height: 450px"
-                  alt="Car Shield Work"
-                />
-              </div>
-            </div>
-          </div>
-
-          <!-- PPF -->
-          <div class="tab-pane fade" id="ppfGallery">
-            <div class="row g-3">
-              <div class="col-md-6 col-lg-4">
-                <img
-                  src="./assets/gallery/ppf1.jpg"
-                  class="img-fluid w-100"
-                  alt="PPF Installation"
-                />
-              </div>
-
-              <div class="col-md-6 col-lg-4">
-                <img
-                  src="./assets/gallery/ppf2.jpg"
-                  class="img-fluid w-100"
-                  alt="PPF Protection"
-                />
-              </div>
-
-              <div class="col-md-6 col-lg-4">
-                <img
-                  src="./assets/gallery/ppf3.jpg"
-                  class="img-fluid w-100"
-                  alt="PPF Finish"
-                />
-              </div>
-            </div>
-          </div>
-
-          <!-- WINDOW TINT -->
-          <div class="tab-pane fade" id="tintGallery">
-            <div class="row g-3">
-              <div class="col-md-6">
-                <img
-                  src="./assets/gallery/tint1.jpg"
-                  class="img-fluid w-100"
-                  alt="Window Tint"
-                />
-              </div>
-
-              <div class="col-md-6">
-                <img
-                  src="./assets/gallery/tint2.jpg"
-                  class="img-fluid w-100"
-                  alt="Car Window Tint"
-                />
-              </div>
-            </div>
-          </div>
-
-          <!-- FASHION FILM -->
-          <div class="tab-pane fade" id="fashionGallery">
-            <div class="row g-3">
-              <div class="col-md-6 col-lg-4">
-                <img
-                  src="./assets/gallery/fashion1.jpg"
-                  class="img-fluid w-100"
-                  alt="Fashion Film"
-                />
-              </div>
-
-              <div class="col-md-6 col-lg-4">
-                <img
-                  src="./assets/gallery/fashion2.jpg"
-                  class="img-fluid w-100"
-                  alt="Car Styling"
-                />
-              </div>
-
-              <div class="col-md-6 col-lg-4">
-                <img
-                  src="./assets/gallery/fashion3.jpg"
-                  class="img-fluid w-100"
-                  alt="Car Color Film"
-                />
-              </div>
-            </div>
-          </div>
-
-          <!-- VIDEOS -->
-          <div class="tab-pane fade" id="videoGallery">
-            <div class="row g-4">
-              <div class="col-md-6">
-                <div class="ratio ratio-16x9">
-                  <video controls muted playsinline>
-                    <source src="./assets/videos/work1.mp4" type="video/mp4" />
-                  </video>
-                </div>
-              </div>
-
-              <div class="col-md-6">
-                <div class="ratio ratio-16x9">
-                  <video controls muted playsinline>
-                    <source src="./assets/videos/work2.mp4" type="video/mp4" />
-                  </video>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Instagram CTA -->
-        <div class="text-center mt-5">
-          <p class="text-secondary mb-3">
-            See more of our latest work on Instagram.
-          </p>
-
-          <a
-            href="https://www.instagram.com/carshield.ppf/"
-            target="_blank"
-            rel="noopener"
-            class="btn btn-outline-danger btn-lg rounded-0 px-5"
-          >
-            Follow @carshield.ppf
-          </a>
+<body>
+  <header class="site-header sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" data-bs-theme="dark">
+      <div class="container">
+        <a class="navbar-brand" href="./index.html"><img src="./assets/Logo/Vertical/PNG/Logo Main Color 1200px.png"
+            alt="Car Shield" /></a>
+        <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse"
+          data-bs-target="#nav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="nav">
+          <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
+            <li class="nav-item">
+              <a class="nav-link" href="./index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./About.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./services.html">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="./gallery.html">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./contact.html">Contact</a>
+            </li>
+            <li class="nav-item ms-lg-3 mt-3 mt-lg-0">
+              <a class="btn btn-brand btn-sm" href="#contact">Book Your Protection
+                <i class="fa-solid fa-arrow-right ms-1"></i></a>
+            </li>
+          </ul>
         </div>
       </div>
-    </section>
-  </body>
+    </nav>
+  </header>
+  <section id="gallery" class="bg-black text-white py-5">
+    <div class="container py-5">
+      <!-- Heading -->
+      <div class="row mb-5">
+        <div class="col-lg-8">
+          <p class="text-danger fw-bold text-uppercase mb-2">Our Work</p>
+
+          <h2 class="display-4 fw-bold mb-3">Protection in Every Detail</h2>
+
+          <p class="text-secondary fs-5">
+            Explore some of our latest automotive protection and styling work
+            completed by Car Shield.
+          </p>
+        </div>
+      </div>
+
+      <!-- Gallery Tabs -->
+      <ul class="nav nav-pills gap-2 mb-5" id="galleryTabs" role="tablist">
+        <li class="nav-item">
+          <button class="nav-link" data-bs-toggle="pill" data-bs-target="#all" type="button">
+            All
+          </button>
+        </li>
+
+        <li class="nav-item">
+          <button class="nav-link" data-bs-toggle="pill" data-bs-target="#ppfGallery" type="button">
+            PPF
+          </button>
+        </li>
+
+        <li class="nav-item">
+          <button class="nav-link" data-bs-toggle="pill" data-bs-target="#tintGallery" type="button">
+            Window Tint
+          </button>
+        </li>
+
+        <li class="nav-item">
+          <button class="nav-link" data-bs-toggle="pill" data-bs-target="#fashionGallery" type="button">
+            Fashion Film
+          </button>
+        </li>
+
+        <li class="nav-item">
+          <button class="nav-link" data-bs-toggle="pill" data-bs-target="#videoGallery" type="button">
+            Videos
+          </button>
+        </li>
+      </ul>
+
+      <div class="tab-content">
+        <!-- ALL -->
+        <div class="tab-pane fade show active" id="all">
+          <div class="row g-3">
+            <div class="col-md-6 col-lg-4">
+              <img src="./assets/gallery/car1.jpg" class="img-fluid w-100 object-fit-cover" style="height: 350px"
+                alt="Car Shield PPF Work" />
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+              <img src="./assets/gallery/car2.jpg" class="img-fluid w-100 object-fit-cover" style="height: 350px"
+                alt="Car Shield Window Tint" />
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+              <img src="./assets/gallery/car3.jpg" class="img-fluid w-100 object-fit-cover" style="height: 350px"
+                alt="Car Shield Protection" />
+            </div>
+
+            <div class="col-md-6 col-lg-8">
+              <img src="./assets/gallery/car4.jpg" class="img-fluid w-100 object-fit-cover" style="height: 450px"
+                alt="Car Shield Automotive Protection" />
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+              <img src="./assets/gallery/car5.jpg" class="img-fluid w-100 object-fit-cover" style="height: 450px"
+                alt="Car Shield Work" />
+            </div>
+          </div>
+        </div>
+
+        <!-- PPF -->
+        <div class="tab-pane fade" id="ppfGallery">
+          <div class="row g-3">
+            <div class="col-md-6 col-lg-4">
+              <img src="./assets/gallery/ppf1.jpg" class="img-fluid w-100" alt="PPF Installation" />
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+              <img src="./assets/gallery/ppf2.jpg" class="img-fluid w-100" alt="PPF Protection" />
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+              <img src="./assets/gallery/ppf3.jpg" class="img-fluid w-100" alt="PPF Finish" />
+            </div>
+          </div>
+        </div>
+
+        <!-- WINDOW TINT -->
+        <div class="tab-pane fade" id="tintGallery">
+          <div class="row g-3">
+            <div class="col-md-6">
+              <img src="./assets/gallery/tint1.jpg" class="img-fluid w-100" alt="Window Tint" />
+            </div>
+
+            <div class="col-md-6">
+              <img src="./assets/gallery/tint2.jpg" class="img-fluid w-100" alt="Car Window Tint" />
+            </div>
+          </div>
+        </div>
+
+        <!-- FASHION FILM -->
+        <div class="tab-pane fade" id="fashionGallery">
+          <div class="row g-3">
+            <div class="col-md-6 col-lg-4">
+              <img src="./assets/gallery/fashion1.jpg" class="img-fluid w-100" alt="Fashion Film" />
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+              <img src="./assets/gallery/fashion2.jpg" class="img-fluid w-100" alt="Car Styling" />
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+              <img src="./assets/gallery/fashion3.jpg" class="img-fluid w-100" alt="Car Color Film" />
+            </div>
+          </div>
+        </div>
+
+        <!-- VIDEOS -->
+        <div class="tab-pane fade" id="videoGallery">
+          <div class="row g-4">
+            <div class="col-md-6">
+              <div class="ratio ratio-16x9">
+                <video controls muted playsinline>
+                  <source src="./assets/videos/work1.mp4" type="video/mp4" />
+                </video>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="ratio ratio-16x9">
+                <video controls muted playsinline>
+                  <source src="./assets/videos/work2.mp4" type="video/mp4" />
+                </video>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Instagram CTA -->
+      <div class="text-center mt-5">
+        <p class="text-secondary mb-3">
+          See more of our latest work on Instagram.
+        </p>
+
+        <a href="https://www.instagram.com/carshield.ppf/" target="_blank" rel="noopener"
+          class="btn btn-outline-danger btn-lg rounded-0 px-5">
+          Follow @carshield.ppf
+        </a>
+      </div>
+    </div>
+  </section>
+</body>
+
 </html>
