@@ -83,6 +83,111 @@ a {
 }
 
 /* =========================
+   Premium Compact Navbar
+========================= */
+
+.site-header {
+  background: #0b0b0d;
+  z-index: 1030;
+  transition: background 0.35s ease,
+              box-shadow 0.35s ease;
+}
+
+.site-header .navbar {
+  padding: 0.55rem 0;
+  background: transparent;
+  transition: padding 0.35s ease;
+}
+
+/* Navbar Logo Only */
+.site-header .navbar-brand img {
+  width: 100px;
+  height: auto;
+  display: block;
+  transition: width 0.35s ease;
+}
+
+/* Footer Logo */
+.footer-logo img {
+  width: 142px;
+  height: auto;
+}
+
+/* Navigation */
+.site-header .nav-link {
+  color: #ddd !important;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  padding: 0.55rem 0.75rem !important;
+  transition: color 0.25s ease;
+}
+
+.site-header .nav-link:hover,
+.site-header .nav-link.active {
+  color: var(--red) !important;
+}
+
+/* Navbar Button */
+.site-header .btn-brand {
+  padding: 0.75rem 1.1rem;
+  font-size: 0.65rem;
+  transition: background 0.3s ease,
+              transform 0.3s ease;
+}
+
+.site-header .btn-brand:hover {
+  transform: translateY(-2px);
+}
+
+/* Scrolled Header */
+.site-header.scrolled {
+  background: rgba(11, 11, 13, 0.94);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.35);
+}
+
+.site-header.scrolled .navbar {
+  padding: 0.3rem 0;
+}
+
+.site-header.scrolled .navbar-brand img {
+  width: 80px;
+}
+
+/* Mobile */
+@media (max-width: 991px) {
+  .site-header .navbar {
+    padding: 0.5rem 0;
+  }
+
+  .site-header .navbar-brand img {
+    width: 85px;
+  }
+
+  .site-header .navbar-collapse {
+    padding: 1rem 0;
+  }
+
+  .site-header.scrolled .navbar-brand img {
+    width: 75px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .site-header,
+  .site-header .navbar,
+  .site-header .navbar-brand img,
+  .site-header .nav-link,
+  .site-header .btn-brand {
+    transition: none;
+  }
+}
+
+
+/* =========================
    Buttons
 ========================= */
 .btn {
@@ -140,7 +245,7 @@ a {
 }
 
 .body-copy,
-.section-heading > p {
+.section-heading>p {
   color: var(--muted);
   line-height: 1.8;
   font-size: .94rem;
@@ -388,7 +493,7 @@ a {
     background: #202025;
   }
 
-  > i {
+  >i {
     color: var(--red);
     font-size: 1.7rem;
     margin-bottom: 2.7rem;
@@ -471,7 +576,7 @@ a {
     transform: scale(1.15) rotate(-8deg);
   }
 
-  > .gallery-content {
+  >.gallery-content {
     position: absolute;
     inset: auto 1.2rem 1rem;
     z-index: 10;
@@ -598,7 +703,7 @@ a {
 }
 
 .process-list {
-  > div {
+  >div {
     border-bottom: 1px solid #ffffff75;
     padding: 1.05rem 0;
     display: flex;
