@@ -2068,3 +2068,97 @@ footer {
     display: none
   }
 } */
+
+
+/* ===== ABOUT SECTION ANIMATION ===== */
+
+#about.about-motion .about-visual,
+#about.about-motion .col-lg-6:nth-child(2) > .eyebrow,
+#about.about-motion .col-lg-6:nth-child(2) > h2,
+#about.about-motion .col-lg-6:nth-child(2) > .body-copy,
+#about.about-motion .row.g-3 > .col-sm-6,
+#about.about-motion .text-link {
+  opacity: 0;
+  transform: translateY(25px);
+  transition:
+    opacity 0.8s ease,
+    transform 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* Car image enters from left */
+#about.about-motion .about-visual {
+  transform: translateX(-40px);
+  transition-delay: 0.1s;
+}
+
+/* Stagger text */
+#about.about-motion .eyebrow {
+  transition-delay: 0.2s;
+}
+
+#about.about-motion h2 {
+  transition-delay: 0.3s;
+}
+
+#about.about-motion .body-copy {
+  transition-delay: 0.4s;
+}
+
+/* Stagger features */
+#about.about-motion .row.g-3 > .col-sm-6:nth-child(1) {
+  transition-delay: 0.45s;
+}
+
+#about.about-motion .row.g-3 > .col-sm-6:nth-child(2) {
+  transition-delay: 0.55s;
+}
+
+#about.about-motion .row.g-3 > .col-sm-6:nth-child(3) {
+  transition-delay: 0.65s;
+}
+
+#about.about-motion .row.g-3 > .col-sm-6:nth-child(4) {
+  transition-delay: 0.75s;
+}
+
+#about.about-motion .text-link {
+  transition-delay: 0.85s;
+}
+
+/* Reveal elements */
+#about.about-motion.is-visible .about-visual,
+#about.about-motion.is-visible .col-lg-6:nth-child(2) > .eyebrow,
+#about.about-motion.is-visible .col-lg-6:nth-child(2) > h2,
+#about.about-motion.is-visible .col-lg-6:nth-child(2) > .body-copy,
+#about.about-motion.is-visible .row.g-3 > .col-sm-6,
+#about.about-motion.is-visible .text-link {
+  opacity: 1;
+  transform: translate(0);
+}
+
+/* Subtle car zoom */
+#about .about-visual img {
+  transition: transform 0.6s ease;
+}
+
+#about .about-visual:hover img {
+  transform: scale(1.035);
+}
+
+/* Accessibility */
+@media (prefers-reduced-motion: reduce) {
+  #about.about-motion .about-visual,
+  #about.about-motion .col-lg-6:nth-child(2) > .eyebrow,
+  #about.about-motion .col-lg-6:nth-child(2) > h2,
+  #about.about-motion .col-lg-6:nth-child(2) > .body-copy,
+  #about.about-motion .row.g-3 > .col-sm-6,
+  #about.about-motion .text-link {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+
+  #about .about-visual:hover img {
+    transform: none;
+  }
+}
