@@ -44,3 +44,31 @@ if (header) {
     }, "-=0.3");
   }
 }
+
+
+document.getElementById("contactForm").addEventListener("submit", function (e) {
+  e.preventDefault();
+
+  const name = document.getElementById("name").value.trim();
+  const phone = document.getElementById("phone").value.trim();
+  const car = document.getElementById("car").value.trim();
+  const service = document.getElementById("service").value;
+  const message = document.getElementById("message").value.trim();
+
+  const whatsappNumber = "01015090067";
+
+
+const text = `*New Quote Request - CarShield*
+
+*Name:* ${name}
+*Phone:* ${phone}
+*Vehicle:* ${car}
+*Service:* ${service}
+*Message:* ${message || "No message provided"}`;
+
+
+  const url = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(text)}`;
+
+  window.open(url, "_blank", "noopener,noreferrer");
+});
+
