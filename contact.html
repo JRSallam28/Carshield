@@ -49,6 +49,7 @@
     </nav>
   </header>
 
+
   <section id="contact" class="bg-black text-white py-5">
     <div class="container py-5">
       <div class="row mb-5">
@@ -93,7 +94,9 @@
                 <label for="service" class="form-label">Service</label>
 
                 <select id="service" class="form-select form-select-lg bg-dark text-white border-secondary" required>
-                  <option value="" selected disabled>Select a service</option>
+                  <option value="" selected disabled>
+                    Select a service
+                  </option>
                   <option>Paint Protection Film</option>
                   <option>Window Tint</option>
                   <option>Fashion Film</option>
@@ -105,7 +108,7 @@
                 <label for="message" class="form-label">Message</label>
 
                 <textarea id="message" class="form-control bg-dark text-white border-secondary" rows="5"
-                  placeholder="Tell us how we can help you"></textarea>
+                  placeholder="Tell us how we can help you" minlength="10" required></textarea>
               </div>
 
               <div class="col-12">
@@ -165,6 +168,8 @@
       </div>
     </div>
   </section>
+
+
 
   <script src="./assets/js/main.js"></script>
 </body>
