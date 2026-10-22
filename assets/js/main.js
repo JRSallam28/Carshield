@@ -58,7 +58,7 @@ document.getElementById("contactForm").addEventListener("submit", function (e) {
   const whatsappNumber = "201015090067";
 
 
-const text = `*New Quote Request - CarShield*
+const text = `*New Request - CarShield*
 
 *Name:* ${name}
 *Phone:* ${phone}
