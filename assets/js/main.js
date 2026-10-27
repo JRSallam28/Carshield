@@ -67,7 +67,7 @@ const text = `*New Request - CarShield*
 *Message:* ${message || "No message provided"}`;
 
 
-  const url = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(text)}`;
+  const url = `https://wa.me/201063062413?text=${encodeURIComponent(text)}`;
 
   window.open(url, "_blank", "noopener,noreferrer");
 });
